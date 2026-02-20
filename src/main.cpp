@@ -23,8 +23,12 @@ void setup() {
 
 void loop() {
 
-    // TODO 6:
-    // Read digital value from IR sensor
+    // TODO 6: Read digital value from IR sensor
+    irState = digitalRead(IR_PIN);
+
+    // NOTE:
+    // Most IR obstacle sensors output LOW when obstacle is detected.
+    // If your sensor behaves differently, invert the condition.
 
     // TODO 7:
     // If obstacle detected
