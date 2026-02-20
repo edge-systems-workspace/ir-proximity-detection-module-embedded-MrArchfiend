@@ -30,12 +30,16 @@ void loop() {
     // Most IR obstacle sensors output LOW when obstacle is detected.
     // If your sensor behaves differently, invert the condition.
 
-    // TODO 7:
-    // If obstacle detected
-    //     Print "Obstacle Detected"
-    // Else
-    //     Print "No Obstacle"
+    // TODO 7: Check obstacle condition
+    if (irState == LOW) {
+        Serial.println("Obstacle Detected");
+    } 
+    else {
+        Serial.println("No Obstacle");
+    }
 
-    // TODO 8:
-    // Add small delay (200–500ms)
+    Serial.println("------------------------------");
+
+    // TODO 8: Add small delay (300ms)
+    delay(300);
 }
